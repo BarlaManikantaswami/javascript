@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //global scope variables
+        var a = 10;
+        let b = 20;
+        document.write(b);
+        document.write("<br>")
+        //let b = 30;wrong// redeclaration is not possible
+        b = 30; //reintialliztion is possible
+        document.write(b);
+        document.write("<br>")
+        //block scope variable
+        {
+            let name1='swami';
+            document.write(name1)
+        }
+
+    </script>
+</body>
+</html>

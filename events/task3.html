@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+	<center>
+		<h1>select a number</h1>
+		<div class="container">
+			<label for="">1</label> <input type="radio" name="radio" value="1">
+			<label for="">2</label> <input type="radio" name="radio" value="2">			
+			<label for="">3</label> <input type="radio" name="radio" value="4">			
+			<label for="">4</label> <input type="radio" name="radio" value="5">
+		</div>
+		<button onclick="start_game()" style="margin-bottom: 5px;">playgame</button><br>
+		<input type="text" id="get"><br>
+		<p id="output"></p>
+	</center>
+	<script type="text/javascript">
+		let radio=document.qureySelectorAll('.container input')
+		function start_game(){
+			for(var i=0;i<radio.length;i++){
+				if(radio[i].checked){
+					var x=radio[i].value;
+					var y=math.floor(math.random() * 4);
+					document.getElementById('get').value=y;
+					if(x==y){
+						document.getElementById('output').textContent="you won"
+					}
+					else{
+						document.getElementById('output').textContent="you loose"
+
+					}
+				  }
+				}
+
+			}
+		
+	</script>
+
+
+
+</body>
+</html>

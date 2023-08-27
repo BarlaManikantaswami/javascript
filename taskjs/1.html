@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>primitive datatypes</h1>
+    <script>
+        var num=12;
+        document.write(num+"<br>");
+        var str="name";
+        document.write(str+"<br>");
+        var big= BigInt('12345678898765432');
+        document.write(big+"<br>");
+        var x;
+        document.write(x+"<br>");
+        var x=2;
+        var y=3;
+        document.write(x==y);
+        document.write("<br>")
+        var a=1;
+        var b=1;
+        document.write(a==b);
+        document.write("<br>")
+        var sym=Symbol("applle");
+        document.write(typeof(sym));
+    </script>
+    <h1>NON-primitive datatypes</h1>
+    <script>
+        const arr=["apple","bat","cat"];
+        document.write(arr[0]);
+        document.write(arr[1]);
+        document.write(arr[2]);
+        document.write("<br>");
+        let name={
+            first_name:"john",
+            lastn_ame:"doe"
+        }
+        document.write(name.first_name+""+name.lastn_ame);
+    </script>
+</body>
+</html>

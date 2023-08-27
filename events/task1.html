@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="height: 300px;width: 600px;border: 1px solid black;">
+        <div style="height: 300px;width: 380px;float: left;border: 1px solid black;">
+            <img src="1.jpg" style="width: 100px;height: 200px;border-right: 1px solid black;margin-top: 10px;" onmouseover="getimage('1.jpg')">
+            <img src="2.jpg" style="width: 100px;height: 200px;border-right: 1px solid black;margin-top: 10px;" onmouseover="getimage('2.jpg')">
+            <img src="3.jpg" style="width: 100px;height: 200px;border-right: 1px solid black;margin-top: 10px;" onmouseover="getimage('3.jpg')">
+
+        </div>
+        <div style="width: 200px;height: 300px;float: right;border: 1px solid black;" id="meet"></div>
+
+    </div>
+    <script>
+        function getimage(imgpath){
+           document.getElementById('meet').innerHTML="<img src='"+imgpath+"' style='width:200px;height:200px;'/>";
+
+        }
+            
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="tect/css">
+        td{
+            text-align: center;
+            font-weight: bold;
+            border: 2px solid red;
+        }
+        td:not(#me){
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+    <table border="1" cellspacing="0" cellpadding="6" width="400">
+        <tr>
+        <td colspan="4" style="height:30px;text-align:right;"id="me"></td>
+        </tr>
+        <tr>
+            <td onclick="getnum('9')">9</td>
+            <td onclick="getnum('8')">8</td>
+            <td onclick="getnum('7')">7</td>
+            <td onclick="getnum('/')">/</td>
+        </tr>
+        <tr>
+            <td onclick="getnum('6')">6</td>
+            <td onclick="getnum('5')">5</td>
+            <td onclick="getnum('4')">4</td>
+            <td onclick="getnum('*')">*</td>
+        </tr>
+        <tr>
+            <td onclick="getnum('3')">3</td>
+            <td onclick="getnum('2')">2</td>
+            <td onclick="getnum('1')">1</td>
+            <td onclick="getnum('-')">-</td>
+        </tr>
+        <tr>
+            <td onclick="getnum('0')">0</td>
+            <td onclick="getnum('c')">c</td>
+            <td onclick="getnum('=')">=</td>
+            <td onclick="getnum('+')">+</td>
+        </tr>
+        </center>
+        <script>
+            var tds = document.querySelectorAll('#me td');
+            for (var i=0;i<tds.length;i++){
+                tds[i].addEventListener("click",function(){
+                    var val = this.innerText
+
+                }
+            }
+        </script>
+    </table>
+
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delayed Text Print</title>
+    <script>
+        function printDelayedText(callback) {
+            setTimeout(function() {
+                var text = "Sample printed after 5 seconds.";
+                callback(text);
+            }, 5000);
+        }
+
+        function displayText(message) {
+            document.getElementById("output").textContent = message;
+        }
+    </script>
+</head>
+<body>
+    <h1>Delayed Text Print</h1>
+    <button onclick="printDelayedText(displayText)">Print Text After 5 Seconds</button>
+    <p id="output"></p>
+</body>
+</html>

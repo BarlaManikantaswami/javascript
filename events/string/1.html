@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        let str="drive ready";
+        document.write(typeof(str));
+        document.write('<br>');
+        let str1=new string('drive ready');
+        document.write(typeof(str1));
+    </script> -->
+    <!-- <script>
+        let str = 'drive ready';
+        document.write("<b>"+str+"</b><br>")
+        document.write("<b>"+str.length+"</b>")
+
+    </script> -->
+    <table border="1" cellspacing="3">
+        <tr>
+            <td>d</td>
+            <td>r</td>
+            <td>i</td>
+            <td>v</td>
+            <td>e</td>
+            <td>&nbsp</td>
+            <td>r</td>
+            <td>e</td>
+            <td>a</td>
+            <td>d</td>
+            <td>y</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>-11</td>
+            <td>-10</td>
+            <td>-9</td>
+            <td>-8</td>
+            <td>-7</td>
+            <td>-6</td>
+            <td>-5</td>
+            <td>-4</td>
+            <td>-3</td>
+            <td>-2</td>
+            <td>-1</td>
+        </tr>
+    </table>
+    <script>
+        let str='drive ready'
+        function ss(strname){
+            document.write("<b>"+strname+"</b><br>")
+        }
+        ss('Orginal String='+str)
+        ss('String length'+str.length)
+        ss("str length="+str[2])
+        //char atmethod
+        ss("char at method="+str.charAt(3))
+        //indexof method
+        ss("Index of:"+str.indexOf('e'))
+        ss("last Index of:"+str.lastIndexOf('r'))
+        let str1 = ' swamii   ';
+        ss("Trim method="+str1.trim())//remove the spaces from left to right
+        let str2 = "DRIVE READY";
+        ss("Lower case:"+str2.toLowerCase())
+        ss("uppercase:"+str.toUpperCase())
+        let str3="raviii";
+        let str4=" sammmm";
+        let str5=" dogggg"
+        ss("concate string:"+str3.concat(str4,str5))
+        let str6="drive ready fsd";
+        ss("includes:"+str6.includes('ready'))//return boolean values
+        //converting string in to array(split method)
+        let str7="apple bat";
+        console.log(str7.split(''));
+        let str8="apple&bat,cat";
+        console.log(str8.split('&'))
+        console.log(str8.split(','))
+        let str9="horse";
+        ss("starts with:"+str9.startsWith('h'))//returns boolean value
+        ss("starts with:"+str9.startsWith('e'))
+        let str10="horse";
+        ss("Ends with:"+str10.endsWith('e'))
+        //returns boolean value
+        ss("Ends with:"+str10.endsWith('h'))
+        //slice method
+        //stringname.slice('startposition,endposition-1')
+        ss("slice method:"+str.slice(1,4))//(1,4-1)=1,3 riv
+        ss("slice method:"+str.slice(-4,-2))
+        //substing method
+        //it allows only positive index
+        ss("slice method:"+str.substring(1,4))//=(1,4-1)
+        ss("slice method:"+str.substring(4,1))
+        ss("slice method:"+str.substring(-1))
+        //substr method = substr(starpos,length of the characters from 1st argu position)
+        ss("sub strmethod:"+str.substr(1,4))
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+    </style>
+    
+</head>
+<body>
+    <div style="height: 700px;width: 1400px;border: 1px solid black;">
+        <div style="height: 700px;width: 500px;float: left;">
+            <img src="1.jpg" style="width: 350px;height: 200px;border: 1px solid black;margin-top: 10px;margin-left: 5px;" >
+            <img src="2.jpg" style="width: 350px;height: 200px;border: 1px solid black;margin-top: 10px;margin-left: 5px;" >
+            <img src="3.jpg" style="width: 350px;height: 200px;border: 1px solid black;margin-top: 10px;margin-left: 5px;">
+
+        </div>
+        <div style="height: 700px;width: 100px;float: left;">
+            <form id="mee">
+            <center>
+            <input type="radio" onmouseover="getimage('1.jpg')">
+            <br>
+            <input type="radio" onmouseover="getimage('4.jpg')">
+            </center>
+            </form>
+        </div>
+        <div style="height: 700px;width: 700px;float:right;">            
+            <img src="4.jpg" style="width: 350px;height: 200px;border: 1px solid black;margin-top: 10px;">
+            <img src="cake.jpg" style="width: 350px;height: 200px;border: 1px solid black;margin-top: 10px;">
+            <div style="height: 200px;width: 350px;border: 1px solid black;margin-top: 10px;"id="meel"></div>
+
+        </div>
+        
+
+        
+    </div>
+    <script>
+        function getimage(imgpath){
+            document.getElementById('meel').innerHTML="<img src='"+imgpath+"' style='width:350px;height:200px;'/>";
+        }
+    </script>    
+    
+            
+        
+
+</body>
+</html>

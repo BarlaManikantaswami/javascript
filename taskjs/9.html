@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>task9</title>
+</head>
+<body>
+    <script type="text/javascript">
+        const num1 = parseFloat(prompt("Enter the first number:"));
+        const num2 = parseFloat(prompt("Enter the secound number:"));
+        const divide = (a, b) => 
+        {
+            if (b === 0) 
+            {
+                return "Cannot divide by zero!";
+            }
+            return a / b;
+        };
+        const multiply = (a, b) => 
+        {
+            return a * b;
+        };
+        const divisionResult = divide(num1, num2);
+        document.write(`Division: ${divisionResult}`,"<br>");
+        const multiplicationResult = multiply(num1, num2);
+        document.write(`Multiplication: ${multiplicationResult}`,"<br>");
+
+    </script>
+</body>

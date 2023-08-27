@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        input{
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <label>Enter Name</label>
+    <input type="text" onkeyup="sample(this.value)" id="ins">
+    <br>
+    <span id="sp_id"></span> 
+    <script type="text/javascript">
+        function sample(str){
+            if(str.length <6){
+                document.getElementById('ins').style.border ='2px solid black';
+                document.getElementById('sp_id').innerHTML="enter the name more than 5 characters";
+                document.getElementById('sp_id').style.color="red";
+            }
+            else{
+                document.getElementById('ins').style.border ='2px solid red';
+
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+        <th>course name</th>
+        <th>course number</th>
+        <th>course fees</th>
+        <th>place</th>
+        </tr>
+    </table>
+    <script type="text/javascript">
+        for(i=0;i<=course.length-1;i++){
+            let tr = document.createElement('tr');
+            let td1 = document.createElement('td');
+            let td2 = document.createElement('td');
+            let td3 = document.createElement('td');
+            let td4 = document.createElement('td');
+            td1.innerText = courses[i].coursename
+            td2.innerText = courses[i].coursenumber
+            td3.innerText = courses[i].coursefees
+            td4.innerText = courses[i].place
+        }
+    </script>
+</body>
+</html>
